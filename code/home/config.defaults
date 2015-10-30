@@ -1,0 +1,3 @@
+_program_name=lingula
+depository_path=/tmp/lingula/depository
+tmp_depository_path=/tmp/lingula/temporary_depository		# lingula uses this directory to create the tarball before moving it

@@ -1,0 +1,35 @@
+
+
+chrono_start:
+martin=/tmp/lingula/timers/martin.txt
+milesbornes=/tmp/lingula/timers/milesbornes.txt
+
+
+
+tmp_depository_path:
+martin=/tmp/lingula/tmp_depository
+
+depository_path:
+martin=/tmp/lingula/other_depository
+
+
+mysql_db:
+martin=martinromuald:root:root
+milesbornes=milesbornes:root:root
+
+
+tarballs:
+martin=& _www:_www & /Volumes/Macintosh HD 2/it/web/agenceweb37/service création/projets/jet/jetsites/martinromuald/application
+milesbornes=/Volumes/Macintosh HD 2/it/web/agenceweb37/service création/projets/jet/jetsites/milesbornes/site/application
+test=/Users/pierrelafitte/Desktop/tmp/tmp
+
+
+rotate:
+martin=+1y
+
+
+
+
+chrono_stop:
+martin=
+milesbornes=

@@ -1,5 +1,39 @@
 #!/usr/bin/env bash
+############################################################
+# lingula 1.0.0 - 2015-10-31
+# By LingTalfi 
+############################################################
+# Below is the bash manager software.
+# We only set the home for you.
 
+
+# https://github.com/lingtalfi/printScriptDir
+printScriptDir (){  
+    # case of a symbolic link
+    if [ -h "$1" ]; then
+        # the following readlink command works at least on MacOsX
+        realPath=$(readlink "$1") 
+        realDir=$(dirname "$realPath")
+    # case of an absolute path        
+    elif [ '/' = "${1:0:1}" ]; then
+        realDir=$(dirname "$1")
+    # case of an assumed relative path        
+    else
+        realPath="$(pwd)/$1"
+        realDir=$(dirname "$realPath")
+        
+        # normalize path
+        pushd "$realDir" > /dev/null
+        realDir=$(pwd)
+        popd > /dev/null
+    fi
+    
+    echo $realDir
+}
+
+
+realDir=$(printScriptDir "$0")
+_home="$realDir/home"
 
 
 

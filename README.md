@@ -53,6 +53,17 @@ More info in the bash manager documentation.
 You could set a cron job if you wanted to, or call the lingula program manually.
 
 
+
+### Permissions
+
+Since your config files will contain database passwords, I would recommend that the config.d directory and 
+its content is owned by root and that the config files are only accessible by the root user (chmod 700).
+Then to execute lingula command, you should naturally use the root user.
+
+
+
+
+
 	 
 How does it work internally?
 ------------------------------

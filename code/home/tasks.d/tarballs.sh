@@ -87,7 +87,7 @@ if [ 1 -eq $ok ]; then
     
     
     
-    if [ 0 -eq $skip ]; then
+    if [ 0 -eq $? ]; then
     
         ############################################################
         # Now, we create a tarball from all the files found in the tmp directory,

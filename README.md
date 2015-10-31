@@ -45,7 +45,7 @@ The last thing you need to do is call the lingula command.
 Just specify the config file you are using (if you have many), and the project you want to use.
 
 ```bash
-lingula -c me.txt -p martin
+lingula -c me -p martin
 ```
 
 More info in the bash manager documentation.
